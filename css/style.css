@@ -3,10 +3,10 @@
 /* ================ */
 :root {
     /* Colores principales */
-    --primary: #1a3e72; /* Azul oscuro profesional */
+    --primary: #3d2e1a; /* Azul oscuro profesional */
     --primary-dark: #0d2b56;
     --primary-light: #2d5a9a;
-    --secondary: #d4af37; /* Dorado para acentos */
+    --secondary: #57381f; /* Dorado para acentos */
     --accent: #8b0000; /* Rojo vino para énfasis */
     --dark: #121212; /* Fondo oscuro */
     --light: #f8f9fa; /* Texto claro */
