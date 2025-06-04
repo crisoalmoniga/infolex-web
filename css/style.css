@@ -861,3 +861,41 @@
 .animate-right.visible {
   animation: slideInRight 2s ease forwards;
 }
+
+/* Estado inicial: oculto */
+.animate-left,
+.animate-right {
+  opacity: 0;
+  transform: translateX(0); /* Por si está sobreescrito */
+}
+
+/* Animaciones al entrar en pantalla */
+.animate-left.visible {
+  animation: slideInLeft 0.8s ease forwards;
+}
+
+.animate-right.visible {
+  animation: slideInRight 0.8s ease forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
