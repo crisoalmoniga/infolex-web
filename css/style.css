@@ -690,9 +690,10 @@
 
 
 .logo span {
-  font-family: var(--font-heading);
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300; /* Más fino */
+  font-size: 1.4rem; /* Ligero ajuste de tamaño */
+  letter-spacing: 0.12rem; /* Espaciado similar a diseño editorial */
   color: var(--primary);
-  letter-spacing: 1px;
+  text-transform: uppercase;
 }
