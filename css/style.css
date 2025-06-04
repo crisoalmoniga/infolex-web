@@ -608,30 +608,39 @@
     order: 2;
   }
   
-  .nav {
-    order: 3;
-    width: 100%;
-    display: none;
-  }
+.nav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--light);
+  width: 200px;
+  display: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: var(--radius-sm);
+  z-index: 1001;
+}
+
+.nav.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
   
-  .nav.active {
-    display: block;
-    animation: fadeIn 0.3s ease;
-  }
-  
-  .nav-list {
-    flex-direction: column;
-    width: 100%;
-    padding: 1rem 0;
-    background-color: var(--light);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    margin-top: 1rem;
-  }
-  
-  .nav-list li {
-    width: 100%;
-    text-align: center;
-  }
+.nav-list {
+  flex-direction: column;
+  gap: 0;
+}
+
+.nav-list li {
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.nav-list a {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  color: var(--gray-dark);
+}
   
   .nav-link {
     display: block;
