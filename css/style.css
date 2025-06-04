@@ -881,7 +881,7 @@
 @keyframes slideInLeft {
   from {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(-200px);
   }
   to {
     opacity: 1;
@@ -892,7 +892,7 @@
 @keyframes slideInRight {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(200px);
   }
   to {
     opacity: 1;
