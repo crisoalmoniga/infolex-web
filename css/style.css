@@ -15,8 +15,9 @@
     --gray-dark: #343a40;
   
     /* Tipografía */
-    --font-heading: 'Playfair Display', serif;
-    --font-main: 'Roboto', sans-serif;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-main: 'Montserrat', sans-serif;
+
   
     /* Espaciado */
     --space-xs: 0.5rem;
@@ -663,4 +664,35 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.logo img {
+  height: 40px; /* Ajustá según tamaño deseado */
+  width: auto;
+  display: block;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  line-height: 1;
+}
+
+
+.logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+  transform: translateY(2px); /* Ajuste fino para alinear con texto */
+}
+
+
+.logo span {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 1px;
 }
