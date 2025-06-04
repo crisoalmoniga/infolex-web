@@ -753,3 +753,65 @@
 .footer-col a:hover {
   color: var(--secondary); /* O blanco puro si preferís */
 }
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 8rem 0 4rem;
+  color: white;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/fondo-hero.png'); /* Cambiá al nombre real */
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px);
+  transform: scale(1);
+  animation: zoomInBlur 10s ease-in-out infinite alternate;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* Negro con 40% opacidad */
+  z-index: 1;
+}
+
+.hero-text {
+  color: white;
+}
+
+
+
+@keyframes zoomInBlur {
+  from {
+    transform: scale(1);
+    filter: blur(4px);
+  }
+  to {
+    transform: scale(1.1);
+    filter: blur(6px);
+  }
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
+}
