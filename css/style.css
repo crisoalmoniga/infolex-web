@@ -586,19 +586,24 @@
 /* Estilos para móvil */
 @media (max-width: 768px) {
   .header .container {
-    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
+
   
   .menu-toggle {
-    display: block; /* Mostrar el botón */
-    order: 1;
+    display: block;
+    order: 2;
+    font-size: 1.5rem;
+    padding: 0.3rem;
   }
   
   .logo {
     order: 0;
-    flex: 1;
+    flex: none;
   }
-  
+
   .header-cta {
     order: 2;
   }
@@ -606,11 +611,11 @@
   .nav {
     order: 3;
     width: 100%;
-    display: none; /* Ocultar menú por defecto */
+    display: none;
   }
   
   .nav.active {
-    display: block; /* Mostrar cuando tenga clase active */
+    display: block;
     animation: fadeIn 0.3s ease;
   }
   
