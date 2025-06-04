@@ -792,7 +792,7 @@
 }
 
 .hero-text {
-  color: white;
+  color: var(--primary);
 }
 
 
@@ -898,4 +898,39 @@
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+@keyframes serviceInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-120%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes serviceInRight {
+  from {
+    opacity: 0;
+    transform: translateX(120%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-service-left,
+.animate-service-right {
+  opacity: 0;
+}
+
+.animate-service-left.visible {
+  animation: serviceInLeft 1.2s ease-out forwards;
+}
+
+.animate-service-right.visible {
+  animation: serviceInRight 1.2s ease-out forwards;
 }
