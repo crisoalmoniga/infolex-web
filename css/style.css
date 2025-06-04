@@ -815,3 +815,49 @@
   background: rgba(0,0,0,0.4);
   z-index: 1;
 }
+
+/* Animación de entrada lateral */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-left {
+  opacity: 0;
+  animation: slideInLeft 2s ease forwards;
+}
+
+.animate-right {
+  opacity: 0;
+  animation: slideInRight 2s ease forwards;
+}
+
+.animate-left,
+.animate-right {
+  opacity: 0;
+}
+
+.animate-left.visible {
+  animation: slideInLeft 2s ease forwards;
+}
+
+.animate-right.visible {
+  animation: slideInRight 2s ease forwards;
+}
