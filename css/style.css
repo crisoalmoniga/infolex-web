@@ -934,3 +934,35 @@
 .animate-service-right.visible {
   animation: serviceInRight 1.2s ease-out forwards;
 }
+
+
+/* Botón WhatsApp flotante */
+.whatsapp-float{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,.25);
+  z-index: 9999;
+  transition: transform .15s ease, box-shadow .15s ease, opacity .2s ease;
+  text-decoration: none;
+}
+.whatsapp-float i{
+  font-size: 28px;
+  line-height: 1;
+}
+.whatsapp-float:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(0,0,0,.28);
+}
+@media (max-width: 480px){
+  .whatsapp-float{ right: 16px; bottom: 16px; width: 52px; height: 52px; }
+  .whatsapp-float i{ font-size: 26px; }
+}
