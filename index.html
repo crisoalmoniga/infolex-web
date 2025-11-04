@@ -81,9 +81,10 @@
         <h3>Derecho de Familia</h3>
         <ul class="area-services">
           <li>Divorcios</li>
-          <li>Separaciones</li>
+          <li>Plan de Parentalidad</li>
+          <li>Cuidado personal</li>
           <li>Alimentos</li>
-          <li>Tenencia de hijos</li>
+          <li>Régimen de comunicación</li>
         </ul>
       </div>
 
@@ -94,10 +95,10 @@
         </div>
         <h3>Sucesiones</h3>
         <ul class="area-services">
-          <li>Declaratorias de herederos</li>
-          <li>Particiones</li>
-          <li>Testamentos</li>
-          <li>Juicios sucesorios</li>
+          <li>Ab intestato</li>
+          <li>Testamentarias</li>
+          <li>Declaratoria de herederos</li>
+          <li>Particion y Adjudicacion</li>
         </ul>
       </div>
     </div>
@@ -142,58 +143,61 @@
 
     <!-- Contacto -->
     <section id="contacto" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contacto</h2>
-            <div class="contact-content">
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Nombre completo" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" placeholder="Teléfono">
-                    </div>
-                    <div class="form-group">
-                        <select required>
-                            <option value="">Área de consulta</option>
-                            <option>Derecho Laboral</option>
-                            <option>Divorcios</option>
-                            <option>Alimentos</option>
-                            <option>Sucesiones</option>
-                            <option>Otro</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Describa su consulta" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar consulta</button>
-                </form>
-                <div class="contact-info">
-                    <div class="info-box">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h3>Dirección</h3>
-                        <p>Talcahuano 452, piso 1 oficina 2<br>Ciudad Autónoma de Buenos Aires</p>
-                    </div>
-                    <div class="info-box">
-                        <i class="fas fa-phone"></i>
-                        <h3>Teléfonos</h3>
-                        <p>11 2451-6474<br>11 6350-1931<br>11 2716-8923</p>
-                    </div>
-                    <div class="info-box">
-                        <i class="fas fa-envelope"></i>
-                        <h3>Email</h3>
-                        <p>estudio.infolex@gmail.com</p>
-                    </div>
-                    <div class="info-box">
-                        <i class="fas fa-comments"></i>
-                        <h3>Consultas</h3>
-                        <p>Presenciales y virtuales</p>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact-content">
+          <form class="contact-form" action="sendmail.php" method="POST" autocomplete="on">
+            <!-- Honeypot anti-spam (oculto) -->
+            <input type="text" name="website" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off">
+            <div class="form-group">
+              <input type="text" name="nombre" placeholder="Nombre completo" required>
             </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" name="telefono" placeholder="Teléfono">
+            </div>
+            <div class="form-group">
+              <select name="area" required>
+                <option value="">Área de consulta</option>
+                <option>Derecho Laboral</option>
+                <option>Divorcios</option>
+                <option>Alimentos</option>
+                <option>Sucesiones</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea name="mensaje" placeholder="Describa su consulta" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar consulta</button>
+          </form>
+    
+          <div class="contact-info">
+            <div class="info-box">
+              <i class="fas fa-map-marker-alt"></i>
+              <h3>Dirección</h3>
+              <p>Talcahuano 452, piso 1 oficina 2<br>Ciudad Autónoma de Buenos Aires</p>
+            </div>
+            <div class="info-box">
+              <i class="fas fa-phone"></i>
+              <h3>Teléfonos</h3>
+              <p>11 2451-6474<br>11 6350-1931<br>11 2716-8923</p>
+            </div>
+            <div class="info-box">
+              <i class="fas fa-envelope"></i>
+              <h3>Email</h3>
+              <p>estudio.infolex@gmail.com</p>
+            </div>
+            <div class="info-box">
+              <i class="fas fa-comments"></i>
+              <h3>Consultas</h3>
+              <p>Presenciales y virtuales</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
