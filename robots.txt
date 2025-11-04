@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://estudioinfolex.com.ar/sitemap.xml
